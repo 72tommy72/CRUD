@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5 py-3">
+        <label class="py-2" for="pn">First Name</label>
+        <input id="pn" class="form-control " type="text">
+        <label class="py-2" for="pp"> Product price</label>
+        <input id="pp" class="form-control " type="text">
+        <label class="py-2" for="pc">product category</label>
+        <input id="pc" class="form-control " type="text">
+        <label class="py-2" for="pd">product description</label>
+        <textarea name="" class="form-control "  id="pd"></textarea>
+        <button onclick="addNewProduct()" id="addBtn" class=" btn btn-info btn-md  my-3 p-2"> ADD</button>
+        <input onkeyup="searchMethod(this.value)" id="searchInput" class="form-control my-2" placeholder="search" type="text">
+        <!-- <button  class="btn btn-warning btn-md m-3 p-2 "> Update</button> -->
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>category</th>
+                    <th>Des</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id ="tableData"> 
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
