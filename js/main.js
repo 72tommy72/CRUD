@@ -152,6 +152,6 @@ function updateElement(index) {
 }
 
 function validateProductName() {
-    var regex = /^[A-Z][a-z]{3,10}$/
+    var regex = /^[A-Za-z]{3}$/
     return regex.test(productName.value)
 }
